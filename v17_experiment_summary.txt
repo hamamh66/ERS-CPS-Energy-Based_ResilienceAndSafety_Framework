@@ -1,0 +1,81 @@
+JSSR STIN Safety Notebook v17
+
+Analytical parameters:
+{
+  "alpha_energy": 0.33,
+  "beta_memory": 0.21,
+  "gamma_resilience": 0.43,
+  "delta_pressure": 0.11,
+  "eta_coupling": 0.22,
+  "zeta_curvature": 0.14,
+  "rho_recovery_cross": 0.09,
+  "theta_entropy": 0.08,
+  "kappa_memory_energy": 0.12
+}
+
+Critical transition parameters:
+{
+  "lambda_velocity": 0.38,
+  "lambda_curvature": 0.24,
+  "lambda_memory": 0.16,
+  "lambda_pressure": 0.1,
+  "lambda_acceleration": 0.06,
+  "lambda_entropy": 0.06
+}
+
+Best residual model: HistGBRegressor
+Best blend weights: alpha=0.7500, beta=0.1000, gamma=0.1500
+Mean one-step next-energy absolute error (test): 0.102639
+
+Lead-time summary:
+ cti_warning_threshold  mean_lead_time_steps  median_lead_time_steps  max_lead_time_steps  n_nodes_with_warning
+                0.1406               74.8889                    65.5                118.0                    18
+
+Final method comparison:
+                 method  test_roc_auc  test_ap  test_brier
+        Hybrid_Risk_v17        0.9943   0.9926      0.1427
+             Trust_Only        0.9934   0.9914      0.0518
+              CASRS_v17        0.9904   0.9875      0.1919
+              CASRS_v12        0.9899   0.9868      0.0943
+          Baseline_Risk        0.9857   0.9802      0.0962
+Instability_Probability        0.9716   0.9465      0.0520
+       Predicted_Growth        0.7378   0.7727      0.2274
+
+Classifier ROC-AUC note:
+
+
+Scenario-wise next-energy regression:
+   scenario    mae  rmse      r2    n
+adversarial 0.1026 0.113 -0.3467 1620
+
+Scenario energy summary:
+   scenario  risk_energy  energy_velocity  energy_curvature  energy_dissipation  latent_instability  resilience_index  energy_norm  memory_norm  pressure_norm  stability_margin  critical_transition_indicator  casrs_v14  hybrid_risk_v14
+adversarial       0.8101           0.0024               0.0             -0.0024              2.8908            0.3368       0.3240       0.7227         0.4400           -0.1994                         0.2259     0.3732           0.4856
+   degraded       0.3631           0.0022              -0.0             -0.0022              1.2272            0.4246       0.1452       0.3068         0.1974            0.0434                         0.1115     0.1913           0.2491
+    nominal       0.1062           0.0004               0.0             -0.0004              0.1345            0.4781       0.0425       0.0336         0.0333            0.1821                         0.0261     0.0783           0.1191
+
+Generated figure files:
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/figures/figure_01_scenario_energy_trajectory_v17.png
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/figures/figure_02_nonlinear_phase_plane_v17.png
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/figures/figure_03_cti_vs_failure_rate_v17.png
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/figures/figure_04_top_risk_nodes_v17.png
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/figures/figure_05_method_comparison_v17.png
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/figures/figure_06_next_energy_prediction_v17.png
+
+Generated table files:
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/tables/action_summary_v17.csv
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/tables/blend_evaluation_v17.csv
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/tables/final_method_comparison_v17.csv
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/tables/instability_classifier_evaluation_v17.csv
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/tables/lead_time_summary_v17.csv
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/tables/lead_times_v17.csv
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/tables/node_attributes.csv
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/tables/normalized_metadata_preview.csv
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/tables/one_step_simulation_eval_v17.csv
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/tables/operator_view_v17.csv
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/tables/residual_regression_evaluation_v17.csv
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/tables/risk_state_distribution_v17.csv
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/tables/scenario_energy_summary_v17.csv
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/tables/scenario_failure_summary_v17.csv
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/tables/scenario_regression_evaluation_v17.csv
+/content/drive/MyDrive/Outputs/JSSR_STIN_Safety_Notebook_v17/tables/worst_nodes_v17.csv

@@ -1,0 +1,9 @@
+scenario,recommended_action,count
+adversarial,Immediate isolation + reroute + forensic verification,640
+degraded,Priority inspection + selective throttling,347
+degraded,Immediate isolation + reroute + forensic verification,152
+degraded,Heightened monitoring + trust revalidation,52
+degraded,Escalated watch + route hardening,49
+nominal,Heightened monitoring + trust revalidation,510
+nominal,Escalated watch + route hardening,45
+nominal,Priority inspection + selective throttling,5

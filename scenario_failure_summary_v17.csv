@@ -1,0 +1,4 @@
+scenario,critical_failure,future_shock,future_critical_failure_10
+adversarial,0.9556,0.2694,0.9927
+degraded,0.0341,0.1515,0.2204
+nominal,0.0,0.0507,0.0
