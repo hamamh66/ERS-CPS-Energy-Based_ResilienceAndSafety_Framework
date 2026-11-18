@@ -1,4 +1,0 @@
-scenario,degraded,pre-critical,stable,stressed
-adversarial,0.0482,0.5042,0.0052,0.4423
-degraded,0.3893,0.027,0.5837,0.0
-nominal,0.0041,0.0,0.9959,0.0

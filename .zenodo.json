@@ -1,0 +1,8 @@
+{
+  "title": "ERS-CPS: Energy-Based Early Warning and Resilience Analysis for Cyber-Physical Infrastructure",
+  "upload_type": "software",
+  "description": "Fully reproducible implementation of a risk-aware visual analytics framework that integrates heterogeneous monitoring information (communication quality, integrity and trust, stress, topology) into a node-level risk-energy state, a six-term Critical Transition Indicator, a one-step energy forecast and a graph-based node ranking, evaluated on a seed-controlled simulation of an 18-node infrastructure. Includes threshold and weight sensitivity, comparison with classical critical-slowing-down indicators, and an operator-preference trade-off analysis.",
+  "creators": [{"name": "Hamam, Habib", "affiliation": "Université de Moncton"}],
+  "license": "MIT",
+  "keywords": ["early warning", "critical transition indicator", "cyber-physical systems", "industrial information integration", "resilience", "visual analytics", "critical slowing down"]
+}

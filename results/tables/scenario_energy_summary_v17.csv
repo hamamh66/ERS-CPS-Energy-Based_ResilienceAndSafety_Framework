@@ -1,0 +1,4 @@
+scenario,risk_energy,energy_velocity,energy_curvature,energy_dissipation,latent_instability,resilience_index,energy_norm,memory_norm,pressure_norm,stability_margin,critical_transition_indicator,casrs_v14,hybrid_risk_v14
+adversarial,0.8101,0.0024,0.0,-0.0024,2.8908,0.3368,0.324,0.7227,0.44,-0.1994,0.2259,0.3732,0.4629
+degraded,0.3631,0.0022,-0.0,-0.0022,1.2272,0.4246,0.1452,0.3068,0.1974,0.0434,0.1115,0.1913,0.2526
+nominal,0.1062,0.0004,0.0,-0.0004,0.1345,0.4781,0.0425,0.0336,0.0333,0.1821,0.0261,0.0783,0.1332

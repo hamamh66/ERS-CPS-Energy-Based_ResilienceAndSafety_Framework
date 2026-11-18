@@ -1,0 +1,306 @@
+{
+  "lead_time_q90": {
+    "cti_warning_threshold": 0.1406,
+    "mean_lead_time_steps": 74.8889,
+    "median_lead_time_steps": 65.5,
+    "max_lead_time_steps": 118.0,
+    "n_nodes_with_warning": 18
+  },
+  "threshold_sensitivity": [
+    {
+      "quantile": 0.8,
+      "tau": 0.1189,
+      "mean_lead": 102.3,
+      "median_lead": 94.0,
+      "max_lead": 200,
+      "nodes_warned": "18/18"
+    },
+    {
+      "quantile": 0.85,
+      "tau": 0.1301,
+      "mean_lead": 86.3,
+      "median_lead": 79.0,
+      "max_lead": 143,
+      "nodes_warned": "18/18"
+    },
+    {
+      "quantile": 0.9,
+      "tau": 0.1406,
+      "mean_lead": 74.9,
+      "median_lead": 65.5,
+      "max_lead": 118,
+      "nodes_warned": "18/18"
+    },
+    {
+      "quantile": 0.925,
+      "tau": 0.1451,
+      "mean_lead": 69.6,
+      "median_lead": 61.0,
+      "max_lead": 115,
+      "nodes_warned": "18/18"
+    },
+    {
+      "quantile": 0.95,
+      "tau": 0.1549,
+      "mean_lead": 63.6,
+      "median_lead": 55.5,
+      "max_lead": 110,
+      "nodes_warned": "18/18"
+    }
+  ],
+  "weight_sensitivity": [
+    {
+      "quantity": "tau",
+      "mean": 0.1408,
+      "std": 0.0098,
+      "min": 0.1149,
+      "max": 0.1635
+    },
+    {
+      "quantity": "mean_lead",
+      "mean": 75.2311,
+      "std": 5.5865,
+      "min": 63.5556,
+      "max": 88.5556
+    },
+    {
+      "quantity": "nodes_warned",
+      "mean": 18.0,
+      "std": 0.0,
+      "min": 18.0,
+      "max": 18.0
+    },
+    {
+      "quantity": "spearman_rho",
+      "mean": 0.996,
+      "std": 0.004,
+      "min": 0.9835,
+      "max": 1.0
+    },
+    {
+      "quantity": "top10_overlap",
+      "mean": 9.885,
+      "std": 0.3198,
+      "min": 9.0,
+      "max": 10.0
+    }
+  ],
+  "csd_comparison": [
+    {
+      "family": "Proposed",
+      "indicator": "CTI (six-term fusion)",
+      "nodes_warned": "18/18",
+      "mean_lead": 156.2,
+      "median_lead": 158.0,
+      "roc_auc": 0.947,
+      "ap": 0.3443,
+      "n_eval": 4626,
+      "positives": 180,
+      "nominal_alarm_rate_pct": 1.014
+    },
+    {
+      "family": "Single CTI term",
+      "indicator": "Velocity only",
+      "nodes_warned": "18/18",
+      "mean_lead": 176.9,
+      "median_lead": 182.5,
+      "roc_auc": 0.5971,
+      "ap": 0.0993,
+      "n_eval": 4626,
+      "positives": 180,
+      "nominal_alarm_rate_pct": 1.014
+    },
+    {
+      "family": "Single CTI term",
+      "indicator": "Curvature only",
+      "nodes_warned": "18/18",
+      "mean_lead": 166.5,
+      "median_lead": 165.5,
+      "roc_auc": 0.5449,
+      "ap": 0.0717,
+      "n_eval": 4626,
+      "positives": 180,
+      "nominal_alarm_rate_pct": 1.014
+    },
+    {
+      "family": "Single CTI term",
+      "indicator": "Memory only",
+      "nodes_warned": "18/18",
+      "mean_lead": 111.1,
+      "median_lead": 100.5,
+      "roc_auc": 0.9741,
+      "ap": 0.5771,
+      "n_eval": 4626,
+      "positives": 180,
+      "nominal_alarm_rate_pct": 1.014
+    },
+    {
+      "family": "Single CTI term",
+      "indicator": "Pressure only",
+      "nodes_warned": "18/18",
+      "mean_lead": 125.4,
+      "median_lead": 118.5,
+      "roc_auc": 0.9257,
+      "ap": 0.2504,
+      "n_eval": 4626,
+      "positives": 180,
+      "nominal_alarm_rate_pct": 1.014
+    },
+    {
+      "family": "Classical CSD",
+      "indicator": "Rolling variance",
+      "nodes_warned": "18/18",
+      "mean_lead": 115.7,
+      "median_lead": 112.0,
+      "roc_auc": 0.861,
+      "ap": 0.1754,
+      "n_eval": 4464,
+      "positives": 180,
+      "nominal_alarm_rate_pct": 1.042
+    },
+    {
+      "family": "Classical CSD",
+      "indicator": "Lag-1 autocorrelation",
+      "nodes_warned": "12/18",
+      "mean_lead": 140.3,
+      "median_lead": 150.0,
+      "roc_auc": 0.4973,
+      "ap": 0.0483,
+      "n_eval": 4464,
+      "positives": 180,
+      "nominal_alarm_rate_pct": 1.042
+    },
+    {
+      "family": "Classical CSD",
+      "indicator": "Rolling skewness",
+      "nodes_warned": "14/18",
+      "mean_lead": 166.9,
+      "median_lead": 186.5,
+      "roc_auc": 0.5583,
+      "ap": 0.0412,
+      "n_eval": 4464,
+      "positives": 180,
+      "nominal_alarm_rate_pct": 1.042
+    },
+    {
+      "family": "Classical CSD",
+      "indicator": "Variance + AC(1) composite",
+      "nodes_warned": "17/18",
+      "mean_lead": 97.5,
+      "median_lead": 86.0,
+      "roc_auc": 0.7315,
+      "ap": 0.1511,
+      "n_eval": 4464,
+      "positives": 180,
+      "nominal_alarm_rate_pct": 1.042
+    }
+  ],
+  "tradeoff_profiles": [
+    {
+      "profile": "Safety-first",
+      "q": 0.71,
+      "tau": 0.0986,
+      "nodes_warned": 18.0,
+      "mean_lead": 149.8333,
+      "min_lead": 75.0,
+      "nodes_below_48": 0.0,
+      "far_pct": 0.8516,
+      "burden_pct": 26.524
+    },
+    {
+      "profile": "Balanced",
+      "q": 0.82,
+      "tau": 0.1232,
+      "nodes_warned": 18.0,
+      "mean_lead": 93.5556,
+      "min_lead": 63.0,
+      "nodes_below_48": 0.0,
+      "far_pct": 0.0,
+      "burden_pct": 13.77
+    },
+    {
+      "profile": "Paper setting",
+      "q": 0.9,
+      "tau": 0.1406,
+      "nodes_warned": 18.0,
+      "mean_lead": 74.8889,
+      "min_lead": 47.0,
+      "nodes_below_48": 1.0,
+      "far_pct": 0.0,
+      "burden_pct": 6.1608
+    },
+    {
+      "profile": "Alarm-averse",
+      "q": 0.97,
+      "tau": 0.1676,
+      "nodes_warned": 18.0,
+      "mean_lead": 50.8333,
+      "min_lead": 4.0,
+      "nodes_below_48": 9.0,
+      "far_pct": 0.0,
+      "burden_pct": 2.4211
+    }
+  ],
+  "method_comparison": [
+    {
+      "method": "Hybrid_Risk_v17",
+      "test_roc_auc": 0.9947,
+      "test_ap": 0.9931,
+      "test_brier": 0.1546
+    },
+    {
+      "method": "Trust_Only",
+      "test_roc_auc": 0.9934,
+      "test_ap": 0.9914,
+      "test_brier": 0.0518
+    },
+    {
+      "method": "CASRS_v17",
+      "test_roc_auc": 0.9904,
+      "test_ap": 0.9875,
+      "test_brier": 0.1919
+    },
+    {
+      "method": "CASRS_v12",
+      "test_roc_auc": 0.9899,
+      "test_ap": 0.9868,
+      "test_brier": 0.0943
+    },
+    {
+      "method": "Baseline_Risk",
+      "test_roc_auc": 0.9857,
+      "test_ap": 0.9802,
+      "test_brier": 0.0962
+    },
+    {
+      "method": "Instability_Probability",
+      "test_roc_auc": 0.9714,
+      "test_ap": 0.9483,
+      "test_brier": 0.0533
+    },
+    {
+      "method": "Predicted_Growth",
+      "test_roc_auc": 0.7655,
+      "test_ap": 0.7896,
+      "test_brier": 0.2116
+    }
+  ],
+  "forecast": [
+    {
+      "scenario": "adversarial",
+      "mae": 0.1035,
+      "rmse": 0.1151,
+      "r2": -0.3982,
+      "n": 1620
+    }
+  ],
+  "persistence": [
+    {
+      "forecast": "Persistence",
+      "mae": 0.0916,
+      "rmse": 0.1287,
+      "r2": -0.7471,
+      "n": 1620
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+family,indicator,nodes_warned,mean_lead,median_lead,roc_auc,ap,n_eval,positives,nominal_alarm_rate_pct
+Proposed,CTI (six-term fusion),18/18,156.2,158.0,0.947,0.3443,4626,180,1.014
+Single CTI term,Velocity only,18/18,176.9,182.5,0.5971,0.0993,4626,180,1.014
+Single CTI term,Curvature only,18/18,166.5,165.5,0.5449,0.0717,4626,180,1.014
+Single CTI term,Memory only,18/18,111.1,100.5,0.9741,0.5771,4626,180,1.014
+Single CTI term,Pressure only,18/18,125.4,118.5,0.9257,0.2504,4626,180,1.014
+Classical CSD,Rolling variance,18/18,115.7,112.0,0.861,0.1754,4464,180,1.042
+Classical CSD,Lag-1 autocorrelation,12/18,140.3,150.0,0.4973,0.0483,4464,180,1.042
+Classical CSD,Rolling skewness,14/18,166.9,186.5,0.5583,0.0412,4464,180,1.042
+Classical CSD,Variance + AC(1) composite,17/18,97.5,86.0,0.7315,0.1511,4464,180,1.042
